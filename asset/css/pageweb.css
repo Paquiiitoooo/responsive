@@ -1,0 +1,58 @@
+/* Styles de base */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Masquer par défaut le footer et le header pour respecter les conditions d’affichage */
+.header {
+    display: none;
+}
+
+.footer {
+    display: none;
+}
+
+/* Texte en colonnes pour les écrans > 640px */
+.container {
+    display: block; /* Réinitialisation au cas où */
+}
+
+.texte {
+    width: 100%;
+    box-sizing: border-box;
+    text-align: justify;
+}
+
+@media (min-width: 641px) {
+    .container {
+        display: flex;
+    }
+    .texte {
+        width: 50%; /* Diviser l'espace en deux colonnes */
+        padding: 10px;
+    }
+}
+
+/* Header visible uniquement pour les écrans au-dessus de 800px */
+@media (min-width: 800px) {
+    .header {
+        display: block;
+        background-color: #333;
+        color: #fff;
+        padding: 20px;
+        text-align: center;
+    }
+}
+
+/* Footer visible uniquement à l'impression */
+@media print {
+    .footer {
+        display: block;
+        text-align: center;
+        padding: 10px;
+        background-color: #333;
+        color: #fff;
+    }
+}
