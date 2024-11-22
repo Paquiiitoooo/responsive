@@ -1,0 +1,165 @@
+body {
+    margin: 0;
+    background-color: whitesmoke;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    overflow: hidden;
+}
+
+header {
+    text-align: center;
+    background-color: transparent;
+}
+
+hr {
+    margin: 2%;
+    border: 0;
+    display: none;
+    border-top: 1px solid gray;
+}
+
+.container {
+    position: relative;
+    width: 90%; 
+    background-color: white;
+    color: #333;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px gray;
+    margin: 20px auto;
+}
+
+.information_princip {
+    position: relative;
+    width: 100%;  
+}
+
+.title h2 {
+    margin: 0;
+    font-size: 1.5rem;
+    font-weight: normal;
+}
+
+.Day h4,
+.Temps h4 {
+    margin: 5px 0;
+    font-size: 1rem;
+    font-weight: normal;
+    color: gray;
+}
+
+.Temps {
+    position: relative;
+    height: 60px;
+}
+
+.Temps img {
+    position: absolute;
+    top: 70%;
+    left: 0;
+    width: 40px;
+    height: 40px;
+    transform: translateY(-50%);
+}
+
+.Temps h1 {
+    position: absolute;
+    top: 70%;
+    left: 50px;
+    margin: 0;
+    font-size: 2rem;
+    font-weight: normal;
+    color: #333;
+    transform: translateY(-50%);
+}
+
+.information{
+    margin-left: 8%;
+}
+
+.information_2 {
+    position: absolute;
+    top: 15%;
+    right: 10%;
+    width: 40%;  
+}
+
+.information_2 h4 {
+    margin: 2px 0;
+    font-size: 0.9rem;
+    color: gray;
+}
+
+/* Organisation des jours */
+.Jours {
+    display: block;
+    margin-top: 1rem;
+    text-align: center;
+    width: 100%; 
+    margin-left: 3%; 
+    text-align: left; 
+}
+
+.Jours div {
+    display: inline-block;
+    width: 13%;
+    vertical-align: top;
+    text-align: center;
+}
+
+.Jours h4 {
+    margin: 5px 0;
+    font-size: 1rem;
+    color: #333;
+}
+
+.Jours img {
+    width: 30px;
+    height: 30px;
+}
+
+.Jours h5 {
+    margin: 0;
+    font-size: 1rem;
+    color: gray;
+}
+
+.Jours .temp-max {
+    font-size: 1rem;
+    color: #333;
+}
+
+.Jours .temp-min {
+    font-size: 1rem;
+    color: gray;
+}
+
+/* Pour les écrans plus petits */
+@media screen and (max-width: 1000px) {
+    .container {
+        width: 90%;
+    }
+
+    .Jours {
+        display: block;
+        text-align: left;
+    }
+
+    .Jours div {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .Jours h4, .Jours img, .Jours .temp-range, .Jours h5 {
+        display: inline-block;
+        vertical-align: middle;
+        margin: 0 5px;
+    }
+
+    .Jours h4, .Jours h5 {
+        width: auto;
+    }
+
+    hr{
+        display: block;
+    }
+}
